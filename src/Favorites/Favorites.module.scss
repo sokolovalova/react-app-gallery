@@ -1,0 +1,53 @@
+@import "../utils/constStyles.scss";
+@import "../utils/constStyleVariable.scss";
+
+.imgCard {
+    width: 30%;
+}
+
+.favoritesGallary{
+    margin: 5rem 0;
+}
+
+.modalContent{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: center;
+    width: 100%;
+    font-size: 1.5rem;
+    font-family: $font;
+    span {
+
+        
+
+        display: flex;
+        flex-direction: column;
+
+        .helpInUse{
+            font-size: .7rem;
+            text-transform: uppercase;
+        }
+
+        p{margin:.5rem 0;}
+
+        .deleter {
+            display: inline;
+            text-align: center;
+            height: 2rem;
+            padding: 0.5rem;
+            box-shadow: $shadowAround;
+            cursor: pointer;
+
+            i {color: $lightGreen;}
+
+            &:hover {
+                background-color: #fbf6f0;
+
+                i{color: #aa3a3a;}
+            }
+        }
+        
+    }
+}

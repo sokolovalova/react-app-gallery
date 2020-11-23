@@ -1,0 +1,177 @@
+@import "../utils/constStyles.scss";
+@import "../utils/constStyleVariable.scss";
+
+.head {
+    display: block;
+    text-align: center;
+    margin: 5rem auto 2rem;
+    .flexConteiner {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        span {
+            width: 10rem;
+            display: flex;
+            font-family: $font;
+            justify-content: space-between;
+            p {
+                margin: 0.5rem;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+
+//BUTTONS______________________________________________________
+.viewBtn {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+}
+
+.selectBtn {
+    padding: 0.5rem;
+}
+
+.selectBtn,
+.viewBtn {
+    margin: 0 1rem;
+    border: 0;
+    box-shadow: $shadowGreen;
+    font-family: $font;
+    background-color: #fff;
+
+    &:hover {
+        background-color: $lightGreen;
+        box-shadow: $shadow;
+        cursor: pointer;
+    }
+
+    &:focus {
+        outline: none;
+    }
+}
+//______________________________________________________________
+
+.conteiner {
+    margin: auto;
+    width: 80%;
+    min-width: 300px;
+    height: 100px;
+    box-shadow: $shadowAround;
+}
+
+.selectConteiner {
+    margin: 0 0;
+    width: 3rem;
+    height: 2rem;
+    box-shadow: $shadowGreen;
+    font-family: "Quicksand", sans-serif;
+    background-color: #fff;
+}
+
+.gallary {
+    display: block;
+    margin: auto;
+    width: 80%;
+}
+
+.conteinerWithPhotos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 1rem, 2rem;
+    min-width: 300px;
+    span {
+        padding: 1%;
+        text-align: center;
+        transition: 0.5s;
+    }
+}
+
+.imgCard1 {
+    width: 30%;
+}
+
+.imgCard2 {
+    width: 40%;
+}
+
+.imgCard3 {
+    width: 80%;
+}
+
+.imgStyle {
+    width: 100%;
+    transition: 0.3s;
+    box-shadow: $shadowGreen;
+    &:hover {
+        width: 98%;
+
+        cursor: pointer;
+    }
+}
+
+.loader {
+    margin: 4rem auto;
+    border: 5px solid #f3f3f3; /* Light grey */
+    border-top: 5px ridge $lightGreen; /* Blue */
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.modalContent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: row;
+    text-align: center;
+    width: 90%;
+    font-size: 1.5rem;
+    font-family: $font;
+    span {
+       
+        display: flex;
+        flex-direction: column;
+
+        p{
+            margin:.5rem 0;
+        }
+
+        .helpInUse{
+            font-size: .7rem;
+            text-transform: uppercase;
+        }
+
+        .liker {
+            display: inline;
+            text-align: center;
+            height: 2rem;
+            padding: 0.5rem;
+            box-shadow: $shadowAround;
+            cursor: pointer;
+
+            i {color: $lightGreen;}
+
+            &:hover {
+                background-color: #fbf6f0;
+
+                i{color: #aa3a3a;}
+            }
+        }
+        
+    }
+}
